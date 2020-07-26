@@ -18,7 +18,7 @@
 ##############################
 text_skin:  # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : https://zaiquanyang.github.io # the base hostname & protocol for your site e.g. https://www.someone.com
+url     : https://www.yzqcat.xyz # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
 title   : ChengYue's Cat
 description: > # this means to ignore newlines until "Language & timezone"
@@ -58,7 +58,7 @@ author:
 repository: zaiquanyang/zaiquanyang.github.io
 repository_tree: master
 github_url: https://github.com/zaiquanyang
-url: https://zaiquanyang.github.io
+url: https://www.yzqcat.xyz
 
 
 ## => Paths
