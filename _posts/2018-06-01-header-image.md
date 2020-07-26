@@ -3,10 +3,8 @@ title: Post with Header Image
 tags: TeXt
 article_header:
   type: overlay
-  background_image:
-    src: "https://i.postimg.cc/bN6sT4CY/2.png"  
-    width : "240" 
-    height : "200"
+  background_color: "green"
+  
 ---
 {%- include extensions/netease-cloud-music.html id='413812448' -%}
 # 前言
