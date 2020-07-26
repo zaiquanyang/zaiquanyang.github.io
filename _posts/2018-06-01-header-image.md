@@ -1,11 +1,6 @@
 ---
-title: Post with Header Image
-tags: TeXt
-article_header:
-  align: center
-  type: overlay
-  background_color: "green"
-  
+title: PCA介绍
+tags: 机器学习，算法
 ---
 {%- include extensions/netease-cloud-music.html id='413812448' -%}
 # 前言
