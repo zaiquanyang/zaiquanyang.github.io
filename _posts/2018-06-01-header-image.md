@@ -55,6 +55,17 @@ $$
 
 <img src="https://i.postimg.cc/bN6sT4CY/2.png"  width = "480" height = "400" />
 
+<div class="card">
+  <div class="card__image">
+    <img class="image" src="https://i.postimg.cc/bN6sT4CY/2.png"/>
+  </div>
+  <div class="card__content">
+    <div class="card__header">
+      <h4>Photograph</h4>
+    </div>
+  </div>
+</div>
+
 ### 基变换
 
 前面的基变换过程可以表示矩阵相乘的形式：
