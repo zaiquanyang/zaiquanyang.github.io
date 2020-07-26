@@ -5,8 +5,8 @@ article_header:
   type: overlay
   background_image:
     src: "https://i.postimg.cc/bN6sT4CY/2.png"  
-    width : "480" 
-    height : "400"
+    width : "240" 
+    height : "200"
 ---
 {%- include extensions/netease-cloud-music.html id='413812448' -%}
 # 前言
