@@ -2,8 +2,8 @@
 title: Post with Header Image
 tags: TeXt
 article_header:
-  type: cover
-  image:
+  type: overlay
+  background_image:
     src: /screenshot.jpg
 ---
 {%- include extensions/netease-cloud-music.html id='413812448' -%}
