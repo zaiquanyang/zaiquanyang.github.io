@@ -2,6 +2,7 @@
 title: Post with Header Image
 tags: TeXt
 article_header:
+  align: center
   type: overlay
   background_color: "green"
   
