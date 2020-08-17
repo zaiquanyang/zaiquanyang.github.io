@@ -1,5 +1,5 @@
 ---
-title: some note about use
+title: 关于该博客使用的一些说明
 tags: git
 ---
 
