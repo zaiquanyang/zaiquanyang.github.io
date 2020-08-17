@@ -3,8 +3,7 @@ title: some note about use
 tags: git
 ---
 
-### 基于Jekyll-github_page 博客站点的使用说明
----
+**基于Jekyll-github_page 博客站点的使用说明**
 
 本博客为了能够实时预览，在本地也创建了一个git仓库，该仓库可以和自己github中的一个仓库同步。平时如果没有预览的需要的话，也可以不同步。
 
