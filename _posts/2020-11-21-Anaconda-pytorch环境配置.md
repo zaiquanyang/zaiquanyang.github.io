@@ -3,9 +3,9 @@ title: Anaconda环境中安装pytorch
 tags: Anaconda, pytorch
 ---
 
-# `Anaconda`环境中安装`pytorch`
+### `Anaconda`环境中安装`pytorch`
 
-## `windows`系统中`Anaconda`安装
+#### `windows`系统中安装`Anaconda`
 
 [官方下载地址](https://www.anaconda.com/products/individual)
 
@@ -23,7 +23,7 @@ tags: Anaconda, pytorch
 
 关于`pip`工具以及`virtualenv`工具的介绍可以参考[Anaconda介绍、安装及使用教程](https://zhuanlan.zhihu.com/p/32925500).
 
-## `Linux`安装`Anaconda`
+#### `Linux`安装`Anaconda`
 
 可以直接在官网下载上传到服务器，也可以直接使用`wget`下载, [Anaconda各版本网址](https://repo.anaconda.com/archive/)。
 复制自己想要的版本网址，输入命令：`wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2020.07-Windows-x86_64.exe`，即可完成下载。
@@ -37,11 +37,11 @@ tags: Anaconda, pytorch
 当初安装的情形记不太清了，如果出现了命令找不到的错误，可能是因为环境变量没有生效，解决方案参考[conda命令找不到](https://blog.csdn.net/lwgkzl/article/details/89329383), [python命令找不到](https://blog.csdn.net/qq1483661204/article/details/78201451).
 
 
-## `pytorch`安装
+#### `pytorch`安装
 
 `windows`和`linux`系统下的安装方法类似。
 
-### 创建虚拟环境 
+##### 创建虚拟环境 
 
 在安装`pytorch`之前，需要先创建一个新的虚拟环境。
 打开`Anaconda Prompt`或者命令行窗口(Windows系统)，输入创建虚拟环境命令：
@@ -58,7 +58,7 @@ tags: Anaconda, pytorch
 
 显示已经安装的虚拟环境的命令`conda env list`或者`conda info --envs`, 带星号的是自己当前所在的环境，一般默认创建的虚拟环境为`base`.
 
-### 包的安装
+##### 包的安装
 
 显示当前环境已经安装的包的信息命令是`conda list`。
 
@@ -70,7 +70,7 @@ tags: Anaconda, pytorch
 
 更新多个指定包，则包名以空格隔开，向后排列。如： `conda update pandas numpy matplotlib` 即更新`pandas、numpy、matplotlib`包
 
-### `安装pytorch`
+##### `安装pytorch`
 
 [pytorch官网](https://pytorch.org/)
 
@@ -95,6 +95,7 @@ conda install pytorch torchvision cudatoolkit=9.0
 
 
 参考：
+
 https://zhuanlan.zhihu.com/p/32925500<br>
 https://blog.csdn.net/qq_43237588/article/details/89183303<br>
 https://blog.csdn.net/WannaSeaU/article/details/88427010<br>
