@@ -26,7 +26,7 @@ tags: Anaconda, pytorch
 #### `Linux`安装`Anaconda`
 
 可以直接在官网下载上传到服务器，也可以直接使用`wget`下载, [Anaconda各版本网址](https://repo.anaconda.com/archive/)。
-复制自己想要的版本网址，输入命令：`wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2020.07-Windows-x86_64.exe`，即可完成下载。
+复制自己想要的版本网址，输入命令：`wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2020.07-Windows-x86_64.exe`，即可完成下载。{:.success}
 
 如果提示没有`wget`，安装命令`yum -y install wget`.
 
