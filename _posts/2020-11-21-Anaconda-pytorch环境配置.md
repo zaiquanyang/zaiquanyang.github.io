@@ -1,5 +1,5 @@
 ---
-title: `Anaconda`环境中安装`pytorch`
+title: Anaconda环境中安装pytorch
 tags: Anaconda, pytorch
 ---
 
