@@ -95,8 +95,8 @@ conda install pytorch torchvision cudatoolkit=9.0
 
 
 参考：
-https://zhuanlan.zhihu.com/p/32925500
-https://blog.csdn.net/qq_43237588/article/details/89183303
-https://blog.csdn.net/WannaSeaU/article/details/88427010
-https://blog.csdn.net/xo3ylAF9kGs/article/details/104104041/
-https://blog.csdn.net/wumenglu1018/article/details/88362927
+https://zhuanlan.zhihu.com/p/32925500<br>
+https://blog.csdn.net/qq_43237588/article/details/89183303<br>
+https://blog.csdn.net/WannaSeaU/article/details/88427010<br>
+https://blog.csdn.net/xo3ylAF9kGs/article/details/104104041/<br>
+https://blog.csdn.net/wumenglu1018/article/details/88362927<br>
