@@ -1,6 +1,6 @@
 ---
 title: vscode中多行数学公式对齐
-tags: markdown、数学公式
+tags: markdown vscode
 ---
 
 # `vscode-markdown`
