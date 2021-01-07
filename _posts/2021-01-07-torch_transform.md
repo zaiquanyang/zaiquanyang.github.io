@@ -2,7 +2,6 @@
 title:  transform方法
 categories: Pytorch
 ---
-# transform方法
 
 ## 随机裁剪：transforms.RandomCrop
 
