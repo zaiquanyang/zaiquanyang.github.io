@@ -1,6 +1,6 @@
  ---
-title: PCA介绍
-tags: 机器学习 算法
+title: Numpy Warning
+tags: Numpy BUG
 ---
  
  **UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program.**
