@@ -1,4 +1,4 @@
- ---
+---
 title: Numpy Warning
 tags: Numpy BUG
 ---
