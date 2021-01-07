@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  transform方法
 categories: Pytorch
 ---
