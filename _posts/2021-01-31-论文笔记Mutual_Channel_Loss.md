@@ -1,7 +1,6 @@
 ---
-layout: post
 title: The Devil is in the Channels-Mutual-Channel Loss for Fine-Grained Image Classification(TIP2020)
-categories: 论文阅读笔记
+tags: 论文阅读笔记
 ---
 
 # The Devil is in the Channels: Mutual-Channel Loss for Fine-Grained Image Classification 论文笔记
@@ -41,7 +40,7 @@ $$L_{MC}(F)=L_dis(F)- \lambda \times L_{div}(F)$$
 
 
 
-### The Discriminality Component $L_{dis}$
+### 损失函数 $L_{dis}$
 
 
 $$
@@ -72,7 +71,7 @@ $L_{dis}$ 的计算主要包括`CWA(Channel-Wise Attention)`,`CCMP(Cross-Channel
 **该损失主要是通过随机选择特征通道映射到目的标签，使得每个特征通道都尽可能包含区分性特征。**
 
 
-### The The Diversity Component $L_{div}$
+### 损失函数 $L_{div}$
 
 该损失函数的作用是迫使每个特征通道都尽可能关注图像的不同区域的特征。
 
