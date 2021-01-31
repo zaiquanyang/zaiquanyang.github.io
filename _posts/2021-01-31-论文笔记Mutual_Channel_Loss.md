@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  论文笔记-The Devil is in the Channels: Mutual-Channel Loss for Fine-Grained Image Classification
+title: The Devil is in the Channels: Mutual-Channel Loss for Fine-Grained Image Classification(TIP2020)
 categories: 论文阅读笔记
 ---
 
