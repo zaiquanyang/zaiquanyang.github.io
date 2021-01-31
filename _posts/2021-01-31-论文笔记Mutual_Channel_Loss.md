@@ -55,7 +55,7 @@ $$
 g\left(\mathbf{F}_{i}\right)=\underbrace{\frac{1}{W H} \sum_{k=1}^{W H}}_{\text {GAP }} \underbrace{\max _{j=1,2, \cdots, \xi}}_{\text {CCMP }} \underbrace{\left[M_{i} \cdot \mathbf{F}_{i, j, k}\right]}_{\text {CWA }}
 $$
 
-$L_{dis}$的计算主要包括`CWA(Channel-Wise Attention)`,`CCMP(Cross-Channel Max Pooling)`,`GAP(Global Average Pooling)`三步.
+$L_{dis}$ 的计算主要包括`CWA(Channel-Wise Attention)`,`CCMP(Cross-Channel Max Pooling)`,`GAP(Global Average Pooling)`三步.
 
 - `CWA(Channel-Wise Attention)`
    
