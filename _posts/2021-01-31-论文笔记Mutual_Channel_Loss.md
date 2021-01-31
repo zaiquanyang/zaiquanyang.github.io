@@ -31,7 +31,9 @@ categories: 论文阅读笔记
 
 总体的损失函数形式：
 
+
 $$L_{MC}(F)=L_dis(F)- \lambda \times L_{div}(F)$$
+
 
 模型架构如下：
 
@@ -41,9 +43,11 @@ $$L_{MC}(F)=L_dis(F)- \lambda \times L_{div}(F)$$
 
 ### The Discriminality Component $L_{dis}$
 
+
 $$
 L_{dis}(\mathbf{F})=L_{C E}({y}, \underbrace{\frac{\left[e^{g\left(\mathbf{F}_{0}\right)}, e^{g\left(F_{1}\right)}, \cdots, e^{g\left(\mathbf{F}_{c-1}\right)}\right]^{\mathrm{T}}}{\sum_{i=0}^{c-1} e^{g\left(F_{i}\right)}}}_{\text {Softmax}}),
 $$
+
 
 其中
 
