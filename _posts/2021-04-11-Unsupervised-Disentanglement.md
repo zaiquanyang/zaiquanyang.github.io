@@ -1,5 +1,5 @@
 ---
-title: Unsupervised Disentanglement of Pose, Appearance and Background from Images and Videos (ICLR 2021)
+title: Unsupervised Disentanglement of Pose Appearance and Background from Images and Videos (ICLR 2021)
 tags: 论文阅读笔记
 ---
 
