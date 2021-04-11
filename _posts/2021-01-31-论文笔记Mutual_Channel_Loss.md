@@ -1,7 +1,6 @@
 ---
-layout: post
 title: The Devil is in the Channels-Mutual-Channel Loss for Fine-Grained Image Classification(TIP2020)
-categories: 论文阅读笔记
+tags: 论文阅读笔记
 ---
 
 # The Devil is in the Channels: Mutual-Channel Loss for Fine-Grained Image Classification 论文笔记
@@ -31,7 +30,9 @@ categories: 论文阅读笔记
 
 总体的损失函数形式：
 
+
 $$L_{MC}(F)=L_dis(F)- \lambda \times L_{div}(F)$$
+
 
 模型架构如下：
 
@@ -39,11 +40,13 @@ $$L_{MC}(F)=L_dis(F)- \lambda \times L_{div}(F)$$
 
 
 
-### The Discriminality Component $L_{dis}$
+### 损失函数 $L_{dis}$
+
 
 $$
 L_{dis}(\mathbf{F})=L_{C E}({y}, \underbrace{\frac{\left[e^{g\left(\mathbf{F}_{0}\right)}, e^{g\left(F_{1}\right)}, \cdots, e^{g\left(\mathbf{F}_{c-1}\right)}\right]^{\mathrm{T}}}{\sum_{i=0}^{c-1} e^{g\left(F_{i}\right)}}}_{\text {Softmax}}),
 $$
+
 
 其中
 
@@ -51,7 +54,7 @@ $$
 g\left(\mathbf{F}_{i}\right)=\underbrace{\frac{1}{W H} \sum_{k=1}^{W H}}_{\text {GAP }} \underbrace{\max _{j=1,2, \cdots, \xi}}_{\text {CCMP }} \underbrace{\left[M_{i} \cdot \mathbf{F}_{i, j, k}\right]}_{\text {CWA }}
 $$
 
-$L_{dis}$的计算主要包括`CWA(Channel-Wise Attention)`,`CCMP(Cross-Channel Max Pooling)`,`GAP(Global Average Pooling)`三步.
+$L_{dis}$ 的计算主要包括`CWA(Channel-Wise Attention)`,`CCMP(Cross-Channel Max Pooling)`,`GAP(Global Average Pooling)`三步.
 
 - `CWA(Channel-Wise Attention)`
    
@@ -68,7 +71,7 @@ $L_{dis}$的计算主要包括`CWA(Channel-Wise Attention)`,`CCMP(Cross-Channel 
 **该损失主要是通过随机选择特征通道映射到目的标签，使得每个特征通道都尽可能包含区分性特征。**
 
 
-### The The Diversity Component $L_{div}$
+### 损失函数 $L_{div}$
 
 该损失函数的作用是迫使每个特征通道都尽可能关注图像的不同区域的特征。
 
