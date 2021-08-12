@@ -17,6 +17,7 @@ tags: 论文阅读笔记
 
 ## 模型概览
 
+<div align=center><img src="https://i.postimg.cc/FHXN4KgV/QQ-20210812173734.png" width="600"></div>
 
 
 
