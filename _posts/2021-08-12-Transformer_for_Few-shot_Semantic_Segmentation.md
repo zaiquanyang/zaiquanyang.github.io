@@ -18,7 +18,12 @@ tags: 论文阅读笔记
 ## 模型概览
 
   <div align=center><img src="https://i.postimg.cc/FHXN4KgV/QQ-20210812173734.png" width="900"></div>
+模型包括两个训练阶段：
+- 阶段一：预训练特征提取的BackBone,作者使用了两种分别是ResNet50和ResNet101,对应上图的黄色部分，训练后的BackBone参数被固定用于第二阶段特征的提取，而分类器权重则被作为第二阶段`Transformer`的`Q`输入。
+- 阶段二：该阶段使用元学习策略训练得到自适应的分类器权重，即 `Classifier Adaptation with Transformer`. 正如文中说的`During episodic training, we aim to learn via our CWT
+how to adapt the classifier weights to a sampledclass in each episode`. 这里的分类器权重$w \in {2d}$
 
+- 
 
 ## 实验结果
 - COCO-20上的实验结果对比：
