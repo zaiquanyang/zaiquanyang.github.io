@@ -17,25 +17,23 @@ tags: 论文阅读笔记
 
 ## 模型概览
 
-<div align=center><img src="https://i.postimg.cc/FHXN4KgV/QQ-20210812173734.png" width="600"></div>
-
+  <div align=center><img src="https://i.postimg.cc/FHXN4KgV/QQ-20210812173734.png" width="900"></div>
 
 
 ## 实验结果
+- COCO-20上的实验结果对比：
 
-COCO-20上的实验结果对比：
+  <div align=center><img src="https://i.postimg.cc/VLp5b19J/QQ-20210812172239.png" width="600"></div>
 
-<div align=center><img src="https://i.postimg.cc/VLp5b19J/QQ-20210812172239.png" width="600"></div>
-
-PASCAL-5上的实验结果对比：
-<div align=center><img src="https://i.postimg.cc/vTDHcSc7/QQ-20210812172406.png" width="600"></div>
+- PASCAL-5上的实验结果对比：
+  <div align=center><img src="https://i.postimg.cc/vTDHcSc7/QQ-20210812172406.png" width="600"></div>
 
 
 ### 消融实验
 - 对整个模型使用元学习策略 vs 仅仅对分类器的学习使用元学习策略
   <div align=center><img src="https://i.postimg.cc/mZqTmjPq/QQ-20210812173117.png" width="400"></div>
 - 是否使用自适应分类器
- <div align=center><img src="https://i.postimg.cc/sDhsqWS2/QQ-20210812173420.png" width="400"></div>
+  <div align=center><img src="https://i.postimg.cc/sDhsqWS2/QQ-20210812173420.png" width="400"></div>
 ### 
 
 
