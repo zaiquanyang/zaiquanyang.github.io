@@ -22,7 +22,11 @@ tags: 论文阅读笔记
 模型包括两个训练阶段：
 - 阶段一：预训练特征提取的BackBone,作者使用了两种分别是ResNet50和ResNet101,对应上图的黄色部分，训练后的BackBone参数被固定用于第二阶段特征的提取，而分类器权重则被作为第二阶段`Transformer`的`Q`输入。
 - 阶段二：该阶段使用元学习策略训练得到自适应的分类器权重，即 `Classifier Adaptation with Transformer`. 正如文中说的`During episodic training, we aim to learn via our CWT
-how to adapt the classifier weights to a sampledclass in each episode`. 这里的分类器权重 $w \in {2d}$. `Transformer`的输入是一个元组包括上一阶段的分类器权重 $w$ , 以及query image $F$, 之后$F$即作为 $k$ ，又作为 $v$.
+how to adapt the classifier weights to a sampledclass in each episode`. 这里的分类器权重 $w \in {2d}$. `Transformer`的输入是一个元组包括上一阶段的分类器权重 $w$ , 以及query image $F$, 之后$F$即作为 $k$ ，又作为 $v$. 和其它地方使用`qkv`注意力类似，这里也使用了权重参数 $w_q, w_k, w_v$ 将三个输入映射到 $d_a$维度的空间。之后应用一个自适应注意力
+
+$$
+\mathbf{w}^{*}=\mathbf{w}+\psi\left(\operatorname{softmax}\left(\frac{\boldsymbol{w} \mathbf{W}_{q}\left(\boldsymbol{F} \mathbf{W}_{k}\right)^{\top}}{\sqrt{d_{a}}}\right)\left(\boldsymbol{F} \mathbf{W}_{v}\right)\right),
+$$
 
 - 
 
