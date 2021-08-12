@@ -26,9 +26,6 @@ how to adapt the classifier weights to a sampledclass in each episode`. 这里�
 
 <div align=center><img src="https://i.postimg.cc/jdFvwWky/QQ-20210812181824.png" width="400"></div>
 
-$$
-\mathbf{w}^{*}=\mathbf{w}+\psi\left(\operatorname{softmax}\left(\frac{\boldsymbol{w} \mathbf{W}_{q}\left(\boldsymbol{F} \mathbf{W}_{k}\right)^{\top}}{\sqrt{d_{a}}}\right)\left(\boldsymbol{F} \mathbf{W}_{v}\right)\right),
-$$
 
 - 
 
