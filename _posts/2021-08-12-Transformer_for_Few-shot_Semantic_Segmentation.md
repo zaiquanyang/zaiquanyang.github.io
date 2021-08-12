@@ -26,6 +26,7 @@ how to adapt the classifier weights to a sampledclass in each episode`. 这里�
 
 <div align=center><img src="https://i.postimg.cc/jdFvwWky/QQ-20210812181824.png" width="400"></div>
 
+作者说这样做的动机是 `The intuition is that, the pairs involving a query image pixel from the new class often enjoy higher similarity than those with background classes except few outlier instances; as a result, this attentive learning would reinforce this desired proximity and adjust the classifier weights conditioned on the query. Consequently, the intra-class variation can be mitigated.`
 
 - 
 
