@@ -4,4 +4,4 @@ title: Simpler is Better: Few-shot Semantic Segmentation with ClassifierWeight T
 tags: 论文阅读笔记
 ---
 
-[Linux解压tgz, .tar.gz ,zip ,gz, .tar文件](https://blog.csdn.net/fu6543210/article/details/79845781)
+[Simpler is Better: Few-shot Semantic Segmentation with ClassifierWeight Transformer 2021_ICCV](https://arxiv.org/abs/2108.03032)
