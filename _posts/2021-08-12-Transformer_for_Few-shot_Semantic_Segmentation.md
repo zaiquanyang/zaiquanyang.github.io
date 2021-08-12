@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simpler is Better: Few-shot Semantic Segmentation with ClassifierWeight Transformer
+title: Simpler is Better Few-shot Semantic Segmentation with ClassifierWeight Transformer
 tags: 论文阅读笔记
 ---
 
