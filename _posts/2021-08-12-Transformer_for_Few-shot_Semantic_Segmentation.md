@@ -42,6 +42,7 @@ how to adapt the classifier weights to a sampledclass in each episode`. 这里�
 ### 消融实验
 - 对整个模型使用元学习策略 vs 仅仅对分类器的学习使用元学习策略
   <div align=center><img src="https://i.postimg.cc/mZqTmjPq/QQ-20210812173117.png" width="400"></div>
+  哈哈作者在整个模型上使用元学习策略训练，结果比较惨，猜测对整个模型进行训练结果较差的一个原因是：作者提出的自适应分类器参数还是较多的（参考DVBE_ZSL的那个的分类器），使得模型学到一个知识迁移能力强的分类器头比较困难，容易在特征提取器上过拟合整个训练集。
 - 是否使用自适应分类器
   <div align=center><img src="https://i.postimg.cc/sDhsqWS2/QQ-20210812173420.png" width="400"></div>
   这自适应分类器貌似作者做的比较work，给模型带来了不少的提升。
