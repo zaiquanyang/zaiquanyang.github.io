@@ -24,7 +24,7 @@ tags: 论文阅读笔记
 
 COCO-20上的实验结果对比：
 
-<img src="https://i.postimg.cc/VLp5b19J/QQ-20210812172239.png" width = "300" alt="" align=center />
+<img src="https://i.postimg.cc/VLp5b19J/QQ-20210812172239.png" width = "800" alt="" align=center />
 
 [![QQ-20210812172239.png](https://i.postimg.cc/VLp5b19J/QQ-20210812172239.png)](https://postimg.cc/6yVBDkmK)
 
