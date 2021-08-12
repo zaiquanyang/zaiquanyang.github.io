@@ -32,7 +32,7 @@ PASCAL-5上的实验结果对比：
 
 ### 消融实验
 - 对整个模型使用元学习策略 vs 仅仅对分类器的学习使用元学习策略
-<div align=center><img src="https://i.postimg.cc/mZqTmjPq/QQ-20210812173117.png" width="500"></div>
+  <div align=center><img src="https://i.postimg.cc/mZqTmjPq/QQ-20210812173117.png" width="500"></div>
 - 是否使用自适应分类器
  <div align=center><img src="https://i.postimg.cc/sDhsqWS2/QQ-20210812173420.png" width="500"></div>
 ### 
