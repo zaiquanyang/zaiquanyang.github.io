@@ -24,13 +24,10 @@ tags: 论文阅读笔记
 
 COCO-20上的实验结果对比：
 
-<div align=center><img src="https://i.postimg.cc/VLp5b19J/QQ-20210812172239.png" width="600"></div>
-
-[![QQ-20210812172239.png](https://i.postimg.cc/VLp5b19J/QQ-20210812172239.png)](https://postimg.cc/6yVBDkmK)
+<div align=center><img src="https://i.postimg.cc/VLp5b19J/QQ-20210812172239.png" width="800"></div>
 
 PASCAL-5上的实验结果对比：
-
-[![QQ-20210812172406.png](https://i.postimg.cc/vTDHcSc7/QQ-20210812172406.png)](https://postimg.cc/1VhZdB04)
+<div align=center><img src="https://i.postimg.cc/vTDHcSc7/QQ-20210812172406.png" width="800"></div>
 
 
 ### 消融实验
