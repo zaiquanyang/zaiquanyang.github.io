@@ -37,13 +37,14 @@ how to adapt the classifier weights to a sampledclass in each episode`. 这里�
 
 - PASCAL-5上的实验结果对比：
   <div align=center><img src="https://i.postimg.cc/vTDHcSc7/QQ-20210812172406.png" width="600"></div>
-
+  作者认为在PASCAL-5数据集上的性能并不是很好，其中的一个原因可能是PASCAL的训练集的类别和图像太少，无法满足本文的要求或者假设：预训练的特征提取器必须是类不可知的？？
 
 ### 消融实验
 - 对整个模型使用元学习策略 vs 仅仅对分类器的学习使用元学习策略
   <div align=center><img src="https://i.postimg.cc/mZqTmjPq/QQ-20210812173117.png" width="400"></div>
 - 是否使用自适应分类器
   <div align=center><img src="https://i.postimg.cc/sDhsqWS2/QQ-20210812173420.png" width="400"></div>
+  这自适应分类器貌似作者做的比较work，给模型带来了不少的提升。
 ### 
 
 
