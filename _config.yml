@@ -21,8 +21,8 @@ highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "t
 url     : https://zaiquanyang.github.io/archive.html # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : https://zaiquanyang.github.io/archive.html# does not include hostname
 title   : ChengYue's Cat
-description: > # this means to ignore newlines until "Language & timezone"
-  人生就像射箭，梦想就是靶子。
+description: 人生就像射箭，梦想就是靶子。> 人生就像射箭，梦想就是靶子。 # this means to ignore newlines until "Language & timezone"
+  
 
 
 ## => Language and Timezone
