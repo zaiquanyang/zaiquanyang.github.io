@@ -206,7 +206,7 @@ exclude:
 defaults:
   - scope:
       path: ""
-      type: posts
+      type: articles
     values:
       layout: article #post #article
       sharing: true
