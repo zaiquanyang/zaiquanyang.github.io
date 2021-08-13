@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ALADIN: All Layer Adaptive Instance Normalization for Fine-grained Style Similarity ICCV_2021
+title: ALADIN-All Layer Adaptive Instance Normalization for Fine-grained Style Similarity ICCV_2021
 tags: 论文阅读笔记
 ---
 
