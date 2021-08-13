@@ -58,7 +58,7 @@ author:
 repository: zaiquanyang/zaiquanyang.github.io
 repository_tree: master
 github_url: https://github.com/zaiquanyang
-url: https://www.yzqcat.xyz
+# url: https://www.yzqcat.xyz
 
 
 ## => Paths
@@ -76,7 +76,7 @@ paths:
 excerpt_separator: <!--more-->
 
 ## license
-license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
+# license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
 
 ## TOC
 toc:
@@ -208,7 +208,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: post #article
+      layout: article #post #article
       sharing: true
       license: true
       aside:
