@@ -33,7 +33,7 @@ tags: Cross-Domain Few-Shot-Learning
   - ICC is defined as the ratio of inter-class variation and the intraclass
 variation. 
   - ICC的具体计算方法参考
-    <div align=center><img src="https://i.postimg.cc/Vvh5b159/QQ-20210828153713.png" width="600"></div>
+    <div align=center><img src="https://i.postimg.cc/Vvh5b159/QQ-20210828153713.png" width="500"></div>
   - 作者在具体计算的时候随机选择了5个类别，一共重复了600次计算平均值。
 
 
