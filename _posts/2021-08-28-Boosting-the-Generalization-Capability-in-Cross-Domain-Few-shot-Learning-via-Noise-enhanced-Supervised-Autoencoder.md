@@ -25,6 +25,20 @@ tags: Cross-Domain Few-Shot-Learning
 
 
 
+## 其他
+
+作者使用了ICC度量方法去评价了提出的方法对视觉编码器带来的泛化能力提升。
+
+- Intra-class correlation (ICC)
+  - ICC is defined as the ratio of inter-class variation and the intraclass
+variation. 
+  - ICC的具体计算方法参考
+    <div align=center><img src="https://i.postimg.cc/Vvh5b159/QQ-20210828153713.png" width="600"></div>
+  - 作者在具体计算的时候随机选择了5个类别，一共重复了600次计算平均值。
+
+
+
+
 
 
 
