@@ -11,7 +11,12 @@ tags: Cross-Domain Few-Shot-Learning
 ## 论文的工作
 
 - 提出了一种泛化能力的模型noise-enhanced supervised autoencoder (NSAE) 用于解决少样本学习中的跨域问题。
-  -  `NSAE`应用并改进了 `Supervised autoencoder`, 
+  -  `NSAE`应用并改进了 `Supervised autoencoder`[1], 并将其用在模型的两阶段训练当中，提高模型的泛化能力。
 
 - motivation 
+  -  `our observation is that generalization capability plays a vital role for representation learning in crossdomain settings.`.
+  -  `Under this intuition, we focus on boosting the generalization capability of the transfer learning based methods`.
 
+
+
+[1] Lei Le, Andrew Patterson, and Martha White. Supervised autoencoders: Improving generalization performance with unsupervised regularizers. Advances in neural information processing systems, 31:107–117, 2018.
