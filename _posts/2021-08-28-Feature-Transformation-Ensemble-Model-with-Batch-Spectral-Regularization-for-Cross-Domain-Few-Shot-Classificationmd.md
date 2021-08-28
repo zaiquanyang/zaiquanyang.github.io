@@ -19,6 +19,11 @@ tags: Cross-Domain Few-Shot Classification
   - `BSR (Batch Spectral Regularization)`：这个技术最早是在NIPS2019的一篇文章[1]中提出的, 认为最下化特征矩阵(由一个batch的视觉特征组成)的奇异值有助于减少模型fine-tune过程中的负迁移影响。
 
 
+## 实验结果
+
+<div align=center><img src="https://i.postimg.cc/kgC5bVDX/QQ-20210828115520.png" width="600"></div>
+
+- `Feature Transformation Ensemble Model`和`BSR`对模型带来的提升较多。
 
 
 [1] Chen X, Wang S, Fu B, et al. Catastrophic forgetting meets negative transfer: Batch spectral shrinkage for safe transfer learning[J]. 2019.
