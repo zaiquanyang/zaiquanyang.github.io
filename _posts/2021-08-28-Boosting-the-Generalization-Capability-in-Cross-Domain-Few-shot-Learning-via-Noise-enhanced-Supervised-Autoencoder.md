@@ -21,7 +21,7 @@ tags: Cross-Domain Few-Shot-Learning
 
 模型的主要改进地方就是在在原先的有监督自编码器上将重建后的图像也作为原始输入。
 
-<div align=center><img src="https://i.postimg.cc/mrKdV1qK/QQ-20210828152519.png" width="600"></div>
+<div align=center><img src="https://i.postimg.cc/mrKdV1qK/QQ-20210828152519.png" width="800"></div>
 
 
 
