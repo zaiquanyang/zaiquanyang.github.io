@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Feature Transformation Ensemble Model with Batch Spectral Regularization for Cross-Domain Few-Shot Classification
-tags: Cross-Domain Few-Shot Classification
+tags: Cross-Domain Few-Shot-Learning
 ---
 
 [Feature Transformation Ensemble Model with Batch Spectral Regularization for Cross-Domain Few-Shot Classification](https://arxiv.org/pdf/2005.08463v3.pdf)
