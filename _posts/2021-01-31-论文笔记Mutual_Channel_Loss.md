@@ -3,7 +3,7 @@ title: The Devil is in the Channels-Mutual-Channel Loss for Fine-Grained Image C
 tags: 论文阅读笔记
 ---
 
-# The Devil is in the Channels: Mutual-Channel Loss for Fine-Grained Image Classification 论文笔记
+## The Devil is in the Channels: Mutual-Channel Loss for Fine-Grained Image Classification 论文笔记
 
 该论文收录在TIP2020期刊上
 
@@ -11,7 +11,7 @@ tags: 论文阅读笔记
 [论文地址](https://arxiv.org/abs/2002.04264)
 
 
-## 摘要
+### 摘要
 
 本文针对细粒度分类任务中具有较强区分性的图像注意力区域获取提出了新的损失函数，该损失函数能够特征能够学习到更加具有区分性的特征表示，同时还能约束各通道关注图像不同的区域特征。提出的损失函数`MC-Loss`包括两部分：
 
@@ -26,7 +26,7 @@ tags: 论文阅读笔记
 
 通过在数据集`CUB-Birds`, `FGVC-Aircraft`, `Flowers-102`, and `Stanford-Cars`上的实验验证了该损失函数能够在现有的一般基础网络模型上取得最好的分类效果。
 
-## 损失函数介绍
+### 损失函数介绍
 
 总体的损失函数形式：
 
@@ -40,7 +40,7 @@ $$L_{MC}(F)=L_dis(F)- \lambda \times L_{div}(F)$$
 
 
 
-### 损失函数 $L_{dis}$
+#### 损失函数 $L_{dis}$
 
 
 $$
@@ -71,7 +71,7 @@ $L_{dis}$ 的计算主要包括`CWA(Channel-Wise Attention)`,`CCMP(Cross-Channel
 **该损失主要是通过随机选择特征通道映射到目的标签，使得每个特征通道都尽可能包含区分性特征。**
 
 
-### 损失函数 $L_{div}$
+#### 损失函数 $L_{div}$
 
 该损失函数的作用是迫使每个特征通道都尽可能关注图像的不同区域的特征。
 
@@ -80,7 +80,7 @@ $L_{dis}$ 的计算主要包括`CWA(Channel-Wise Attention)`,`CCMP(Cross-Channel
 <img src="https://i.postimg.cc/9M8kLw3N/MC-Loss-TIP-2020.png" width="80%">
 
 
-## 实验相关问题
+### 实验相关问题
 
 - 由于每个类别对应一定的特征通道数目，也就是说对于不同的数据集可能需要通过`VGG`或者`Resnet`提取的特征通道数不一致，而且与一般的预训练模型不一致，这需要从头训练网络，难度估计不小；但是为了能够使用别人预训练好的网络，作者针对数据集中的不同类别指定不同特征通道数，使得最后全部类别的通道总数目等于人家预训练模型输出的通道数，预训练的`VGG16`通道数是512，`Resnet50`是2048。
 
