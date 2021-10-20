@@ -24,8 +24,32 @@ tags: Few-shot-obeject-detection
 
 #### 方法介绍
 
+模型的改进比较简单，就是`GDL`梯度解耦层，`GDL`的实现是一个`channel-wise weight`，为了解耦`RPN`和`RCNN`之间的关联性，`GDL`层在向`BackBone`回传
+梯度的时候缩放梯度（甚至是停止梯度回传）
 
- <div align=center><img src="https://i.postimg.cc/fTMCtbH9/DeFRCN-1.png" width="600"></div>
+ <div align=center><img src="https://i.postimg.cc/fTMCtbH9/DeFRCN-1.png" width="500"></div>
 
+`PCB`是一个无参的分类校正模块。
 
 #### 实验结果
+
+- 实现的细节
+  - 在`Base training`阶段，作者利用`GDL`层截断了`RPN`的回传梯度，而`RCNN`的梯度则进行了一定的缩放。**这说明了减少类不可知的`RPN`对`BackBone`
+    即特征提取的影响是比较关键的，直觉上可能是其弱化了特征的可分类性，使`RCNN`性能变差，而这对少样本检测任务是至关重要的。**
+  - 在`Novel training`阶段，`RPN`和`RCNN`的梯度几乎都被截断了(`GDL`的参数 $\lambda$ 被设置为0.01)，**这说明在`Novel Fine-tune`阶段要尽可能
+    减少少样本数据对`BackBone`的影响，直觉上这些少样本数据可能会降低在`Base data`上训好的`BackBone`的泛化性，而过拟合到训练当中用到的少量样本
+    中的任务无关特征**。
+
+- SOTA比较和Ablation实验
+
+    - SOTA比较
+
+    <div align=center><img src="https://i.postimg.cc/g2XZnFPh/DeFRCN-2.png" width="500"></div>
+
+    - `RPN`和`RCNN`的耦合性对结果的影响，验证了合理控制二者之间的耦合性对检测任务尤其是少样本任务的重要性
+
+    <div align=center><img src="https://i.postimg.cc/5yKX2p7p/DeFRCN-3.png" width="500"></div>
+
+
+
+
