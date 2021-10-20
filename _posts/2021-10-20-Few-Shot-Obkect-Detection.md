@@ -10,6 +10,7 @@ tags: Few-shot-obeject-detection
 
 - 会议： ICCV2021
 - 作者： 旷视科技
+- 文章链接：[arXiv](https://arxiv.org/pdf/2108.09017.pdf)
 - 代码：[github](https://github.com/er-muyue/DeFRCN)
 
 
