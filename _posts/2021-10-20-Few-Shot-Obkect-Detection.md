@@ -64,6 +64,8 @@ tags: Few-shot-obeject-detection
 
 <font color=purple>我是蓝色</font>
 
+<table><tr><td bgcolor=yellow>我是蓝色yellow</td></tr></table>
+
 
 
 
