@@ -62,7 +62,7 @@ tags: Few-shot-obeject-detection
 - 代码：[github](https://github.com/er-muyue/DeFRCN)
 
 
-<font color=#8A2BE2>我是蓝色</font>
+<font color=purple>我是蓝色</font>
 
 
 
