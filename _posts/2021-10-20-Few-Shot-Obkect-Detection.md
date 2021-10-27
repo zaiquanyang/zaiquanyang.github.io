@@ -54,4 +54,14 @@ tags: Few-shot-obeject-detection
 
 
 
+### 2. FSCE: Few-Shot Object Detection via Contrastive Proposal Encoding
+
+- 会议： CVPR2021
+- 作者： 旷视科技
+- 文章链接：[arXiv](https://arxiv.org/pdf/2108.09017.pdf)
+- 代码：[github](https://github.com/er-muyue/DeFRCN)
+
+
+<font color=Blue>我是蓝色</font>
+
 
