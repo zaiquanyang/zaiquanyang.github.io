@@ -112,16 +112,16 @@ only backgrounds (standard RoI batch size is 512, and the number of foreground p
 
 关于proposal的对比学习设计和其他有监督对比学习很相似：
 
-<div align=center><img src="https://i.postimg.cc/DwnPqKtJ/FSCE-2.png" width="500"></div>
+<div align=center><img src="https://i.postimg.cc/DwnPqKtJ/FSCE-2.png" width="600"></div>
 
 
 #### 实验结果
 
 SOTA实验
 
-<div align=center><img src="https://i.postimg.cc/jS0km9Bt/FSCE-4.png" width="500"></div>
+<div align=center><img src="https://i.postimg.cc/jS0km9Bt/FSCE-4.png" width="600"></div>
 
-<div align=center><img src="https://i.postimg.cc/GtTqSJQ4/FSCE-5.png" width="500"></div>
+<div align=center><img src="https://i.postimg.cc/GtTqSJQ4/FSCE-5.png" width="400"></div>
 
 
 消融实验
@@ -133,7 +133,7 @@ SOTA实验
 [20] Cosface: Large margin cosine loss for deep face  recognition. In 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition
 
 
-<table><tr><td bgcolor=red>我是蓝色yellow</td></tr></table>
+[comment]: <> (<table><tr><td bgcolor=red>我是蓝色yellow</td></tr></table>)
 
 
 
