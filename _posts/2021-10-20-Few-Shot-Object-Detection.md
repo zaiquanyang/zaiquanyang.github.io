@@ -110,6 +110,7 @@ only backgrounds (standard RoI batch size is 512, and the number of foreground p
 作者给出了新的baseline的结果
 <div align=center><img src="https://i.postimg.cc/MKhhxXfk/FSCE-3.png" width="400"></div>
 
+关于proposal的对比学习设计和其他有监督对比学习很相似：
 
 <div align=center><img src="https://i.postimg.cc/DwnPqKtJ/FSCE-2.png" width="500"></div>
 
