@@ -75,7 +75,11 @@ the concern that rare objects would be deemed as background [14, 13, 18].
     However, based on our experiments with Faster R-CNN [4], the commonly adopted detector in few-shot detection, class-agonistic region proposal network
 (RPN) is able to make foreground proposals for novel instances, and the final box regressor can localize novel instances  quite accurately.
     ```
+  作者用可视化验证了自己的观点
+    <div align=center><img src="https://i.postimg.cc/prLsYM9J/FSCE-1.png" width="500"></div>
 
+  左图给出了不同类之间的余弦相似度，`base class` bus 和 `novel class` bird的相似度是-0.1， 但是 novel class `cow` 和 novel class `horse`
+的相似度却高达0.39，这表明 `novel class`的实例特征区分度较弱。这也与本文的目的提升类内特征表示的紧凑性，增加类之间的方差相呼应。
   -
 #### 方法介绍
 
@@ -83,7 +87,7 @@ the concern that rare objects would be deemed as background [14, 13, 18].
 
 
 
-<font color=red>我是蓝色</font>
+- <font color=red>少样本检测任务在`fine-tuning`后的`RPN`对`novel class`的分类比定位更容易出现错误</font>
 
 <table><tr><td bgcolor=red>我是蓝色yellow</td></tr></table>
 
