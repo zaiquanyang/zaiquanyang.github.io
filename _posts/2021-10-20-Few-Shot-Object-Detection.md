@@ -93,7 +93,9 @@ the concern that rare objects would be deemed as background [14, 13, 18].
     We believe the contrastively learned object representations aware of the intra-class compactness and the inter-class difference
     can ease the misclassification of unseen objects as similar categories.
     ```
+
 **contribution**
+
 首次将对比学习的思想引入了少样本检测任务当中，通过设计一个简单而高效的模型在少样本检测性能上取得了明显的提升。
 To our best knowledge, we are the first to bring contrastive learning into few-shot object detection. Our simple design
 sets the new state-of-the-art in any shot (1, 2, 3, 5, 10, and 30), with up to +8:8% on the standard PASCAL VOC
