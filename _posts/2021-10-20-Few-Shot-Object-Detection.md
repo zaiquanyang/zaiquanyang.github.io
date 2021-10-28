@@ -63,6 +63,9 @@ tags: Few-shot-obeject-detection
 
 
 #### **Motivation** and **Contribution**
+
+**Motivation**
+
 - 作者认为与`GT_Box`有着不同交并比的`Proposals`有着类似于对比学习的样本增强的思想，而正负样本的对比学习有利于增强特征表示的泛化能力，
   因此作者沿着对比学习的思想针对目标检测任务设计了基于`Proposal`的对比学习模型FSCE`Few-Shot object detection via Contrastive proposals Encoding`。
 - 本文也给出了关于`FSD`任务不少的 insights
@@ -89,14 +92,45 @@ the concern that rare objects would be deemed as background [14, 13, 18].
     Therefore in this work, we explore to extend the supervised batch contrastive approach [34] to few-shot object detection.
     We believe the contrastively learned object representations aware of the intra-class compactness and the inter-class difference
     can ease the misclassification of unseen objects as similar categories.
-```
-
+    ```
+**contribution**
+首次将对比学习的思想引入了少样本检测任务当中，通过设计一个简单而高效的模型在少样本检测性能上取得了明显的提升。
+To our best knowledge, we are the first to bring contrastive learning into few-shot object detection. Our simple design
+sets the new state-of-the-art in any shot (1, 2, 3, 5, 10, and 30), with up to +8:8% on the standard PASCAL VOC
+benchmark and +2:7% on the challenging COCO benchmark.
 
 #### 方法介绍
 
+作者首先基于自己的观察在TFA[16]的基础上稍作修改，提出了一个更强的baseline,
+作者观察到模型在fine-tuning阶段与base-training相比而言，proposals from positive anchors 只有后者的1/4，这是由于RPN在fine-tuning
+对于anchor的评分较低，导致了较少的proposals可以进入RoI进行分类，为此作者double了RPN经过NMS后的proposal数目。
+此外作者采样了原先设置的proposals 数目的一半送入分类器和回归器计算损失。作者称`in fine-tuning stage the discarded half contains
+only backgrounds (standard RoI batch size is 512, and the number of foreground proposals are far less than half of it).`
+这个地方不理解作者用意？
+作者给出了新的baseline的结果
+<div align=center><img src="https://i.postimg.cc/MKhhxXfk/FSCE-3.png" width="400"></div>
+
+
+<div align=center><img src="https://i.postimg.cc/DwnPqKtJ/FSCE-2.png" width="500"></div>
+
+
 #### 实验结果
 
+SOTA实验
+
+<div align=center><img src="https://i.postimg.cc/jS0km9Bt/FSCE-4.png" width="500"></div>
+
+<div align=center><img src="https://i.postimg.cc/GtTqSJQ4/FSCE-5.png" width="500"></div>
+
+
+消融实验
+<div align=center><img src="https://i.postimg.cc/sftrfTb0/FSCE-6.png" width="500"></div>
+
+
+
+[16] Frustratingly simple few-shot object detection. In International Conference on Machine Learning (ICML), July 2020
 [20] Cosface: Large margin cosine loss for deep face  recognition. In 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition
+
 
 <table><tr><td bgcolor=red>我是蓝色yellow</td></tr></table>
 
