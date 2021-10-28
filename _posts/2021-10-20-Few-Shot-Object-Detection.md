@@ -80,12 +80,23 @@ the concern that rare objects would be deemed as background [14, 13, 18].
 
   左图给出了不同类之间的余弦相似度，`base class` bus 和 `novel class` bird的相似度是-0.1， 但是 novel class `cow` 和 novel class `horse`
 的相似度却高达0.39，这表明 `novel class`的实例特征区分度较弱。这也与本文的目的提升类内特征表示的紧凑性，增加类之间的方差相呼应。
-  -
+
+  - 本文还提到为了获得类之间更好的分类边界通常一个做法就是使用一个有较大边缘距离的分类器，比如使用一些loss将类之间的拉的更开，但是对于few-shot这样的
+    data-hunger的任务设置下，这种做法很难取得较为理想的性能[20]. 而最近兴起的contrastive learning在各项任务中都表现出了不错的知识迁移能力。而且在
+    对比学习中的正负样本增强和检测任务中各种proposal有着相似的功能，因此可以尝试使用对比学习提升表征的区分度和泛化能力。
+    原文：
+    ```markdown
+    Therefore in this work, we explore to extend the supervised batch contrastive approach [34] to few-shot object detection.
+    We believe the contrastively learned object representations aware of the intra-class compactness and the inter-class difference
+    can ease the misclassification of unseen objects as similar categories.
+```
+
+
 #### 方法介绍
 
 #### 实验结果
 
-
+[20] Cosface: Large margin cosine loss for deep face  recognition. In 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition
 
 <table><tr><td bgcolor=red>我是蓝色yellow</td></tr></table>
 
