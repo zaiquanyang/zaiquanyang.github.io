@@ -57,9 +57,30 @@ tags: Few-shot-obeject-detection
 ### 2. FSCE: Few-Shot Object Detection via Contrastive Proposal Encoding
 
 - 会议： CVPR2021
-- 作者： 旷视科技
-- 文章链接：[arXiv](https://arxiv.org/pdf/2108.09017.pdf)
-- 代码：[github](https://github.com/er-muyue/DeFRCN)
+- 作者： 南加州大学、旷视科技
+- 文章链接：[arXiv](https://openaccess.thecvf.com/content/CVPR2021/papers/Sun_FSCE_Few-Shot_Object_Detection_via_Contrastive_Proposal_Encoding_CVPR_2021_paper.pdf)
+- 代码：[github](https://github.com/MegviiDetection/FSCE)
+
+
+#### **Motivation** and **Contribution**
+- 作者认为与`GT_Box`有着不同交并比的`Proposals`有着类似于对比学习的样本增强的思想，而正负样本的对比学习有利于增强特征表示的泛化能力，
+  因此作者沿着对比学习的思想针对目标检测任务设计了基于`Proposal`的对比学习模型FSCE`Few-Shot object detection via Contrastive proposals Encoding`。
+- 本文也给出了关于`FSD`任务不少的 insights
+  - 少样本检测任务在`fine-tuning`后的`RPN`对`novel class`的分类比定位更容易出现错误，模型学习到的分类器更容易混淆`novel class`中的相似类别比如`cow`和`horse`,其实本质上
+    应该还是由于`few-shot`导致的，因此解决分类错误问题是提升少样本检测性能的关键。
+  原文叙述为：
+    ```markdown
+    In few-shot detection, one might naturally conjecture the localization of novel objects is going to under-perform its base categories counterpart, with
+the concern that rare objects would be deemed as background [14, 13, 18].
+    However, based on our experiments with Faster R-CNN [4], the commonly adopted detector in few-shot detection, class-agonistic region proposal network
+(RPN) is able to make foreground proposals for novel instances, and the final box regressor can localize novel instances  quite accurately.
+    ```
+
+  -
+#### 方法介绍
+
+#### 实验结果
+
 
 
 <font color=red>我是蓝色</font>
