@@ -49,6 +49,7 @@ $$
 AdaptMLP额外引入的参数来自于两个全连接层，参数分别为 $$\boldsymbol{W}_{\text {down }} \in \mathbb{R}^{d \times \hat{d}}$$, $$\boldsymbol{W}_{\text {up}} \in \mathbb{R}^{d \times \hat{d}}$$, 这里 $$\hat{d} \ll d$$.
 
 **适用性**
+
 由于AdaptMLP 没有改变任何 Transformer 自身结构，因此能够作为插件应用在任何其它 Vison Transformer结构中。
 作者称之前的 prompt-related 方法就不太适合一些 金字塔特征结构的 VIT 变体。
 此外，作者也注意到 prompt-related 的方法在从视觉任务应用到视频任务上时，后者需要引入较多的 可学习Tokens。
