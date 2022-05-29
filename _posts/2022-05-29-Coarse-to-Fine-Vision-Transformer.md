@@ -51,6 +51,19 @@ DVT (Not all images are worth16x16 words: Dynamic transformers for efficient ima
 
 <div align=center><img src="http://tva1.sinaimg.cn/large/007d2DYjly1h2p4t3pkxbj30z30fjtfq.jpg" width="600"></div>
 
+- **Coarse Inference Stage**
+这一步和普通的VIT没什么区别就是有一个 Informative Region Identification， 该步是识别出语义重要性较高的 Patch, 作者是将不同层的 Cls-Token Attention 通过下面的方式融合起来：
+
+$$
+\overline{\mathbf{a}}_{k}=\beta \cdot \overline{\mathbf{a}}_{k-1}+(1-\beta) \cdot \mathbf{a}_{k}^{0}
+$$
+
+这里的 $$k$$ 表示的是第 $$k$$ 层， $$\beta$$ 表示的移动平均参数。
+使用 Class Attention指示 Patch 的语义重要性在之前的工作中有使用，因此作者这里还强调了不同。。。。
+
+- **Fine Inference Stage**
+
+如果在上一阶段的预测结果置信度不高于阈值 $$\eta$$ 时，就要进入细粒度预测阶段，这一步会选择语义重要性高的Patch，然后划分成 Size 更小的 Patch， 为了然后将上一阶段的Patch 特征也用到这一阶段中，作者称其为特征重用，操作比较简单如下图：
 
 <div align=center><img src="http://tva1.sinaimg.cn/large/007d2DYjly1h2p4tvxr4sj312t0l4nap.jpg" width="600"></div>
 
@@ -58,6 +71,7 @@ DVT (Not all images are worth16x16 words: Dynamic transformers for efficient ima
 
 ### 🦖 实验
 
+- 在ImageNet-1K上的分类效果比较
 <div align=center><img src="http://tva1.sinaimg.cn/large/007d2DYjly1h2p4usbc0vj313s0o80z6.jpg" width="600"></div>
 
 
