@@ -52,7 +52,7 @@ $$
 \boldsymbol{Y}_{h 2}=\operatorname{DwConv}\left(\operatorname{FC}\left(\boldsymbol{X}_{h 2}\right)\right)
 $$
 
-不过这样设计就能捕获高频信息。。我才识学浅，不太理解哈。
+不过这样设计就能捕获高频信息。。才识学浅，不太理解哈。
 
 
 #### 🦖  Frequency ramp structure
