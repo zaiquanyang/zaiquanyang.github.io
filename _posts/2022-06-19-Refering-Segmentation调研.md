@@ -1,6 +1,6 @@
 ---
 # layout: post
-title: Weakly Supervised Object Localization 弱监督定位调研
+title: Referring-Image-Segmentation调研
 tags: 弱监督 目标定位
 ---
 
@@ -28,6 +28,7 @@ tags: 弱监督 目标定位
 
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- CVPR2020
+
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- arXiv
 - [Local-Global Context Aware Transformer for Language-Guided Video Segmentation](https://github.com/leonnnop/Locater)
