@@ -163,6 +163,7 @@ h2 {
 
 .hero-actions,
 .contact-links {
+  margin-top: 0.9rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.9rem;
