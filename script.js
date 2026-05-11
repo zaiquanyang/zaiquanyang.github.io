@@ -1,8 +1,8 @@
 const profile = {
   name: "Zaiquan Yang",
   affiliation: "Department of Computer Science and Engineering, City University of Hong Kong",
-  summary:
-    "Three-year Ph.D. student at City University of Hong Kong.",
+//   summary:
+//     "Third-year Ph.D. student at City University of Hong Kong.",
   avatar:
     "./assets/personal_v1.jpg",
   wechatQr: "./assets/微信图片_20260511202308_98_10.jpg",
@@ -54,7 +54,7 @@ const profile = {
     }
   ],
   about:
-        "I am currently a Ph.D. student at <a href=\"https://www.cityu.edu.hk\" target=\"_blank\">City University of Hong Kong</a> (2023-Now). I hold a Master's degree in Computer Science from <a href=\"https://www.buaa.edu.cn\" target=\"_blank\">Beihang University</a> (2020-2023) and a Bachelor's degree in Electronic Science and Technology from <a href=\"https://www.bit.edu.cn\" target=\"_blank\">Beijing Institute of Technology</a> (2016-2020). Previously, I focus on data-efficient learning, including zero-shot learning and weakly supervised learning, on tasks such as image/video text grounding.  Currently, my research mainly focuses on large multimodal language models and large diffusion language models.",
+        "I am currently a Third-year Ph.D. student at <a href=\"https://www.cityu.edu.hk\" target=\"_blank\">City University of Hong Kong</a> (2023-Now). I hold a Master's degree in Computer Science from <a href=\"https://www.buaa.edu.cn\" target=\"_blank\">Beihang University</a> (2020-2023) and a Bachelor's degree in Electronic Science and Technology from <a href=\"https://www.bit.edu.cn\" target=\"_blank\">Beijing Institute of Technology</a> (2016-2020). Previously, I focus on data-efficient learning, including zero-shot learning and weakly supervised learning, on tasks such as image/video text grounding.  Currently, my research mainly focuses on large multimodal language models and large diffusion language models.",
   tags: [
     // "Vision-Language Models",
     // "Machine Learning",
