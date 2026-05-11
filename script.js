@@ -75,7 +75,7 @@ const publications = {
   first_author: [
     {
       title: "Beyond the Canvas: Efficient dLLMs via Self-Guided CoT Compression and Suffix Sparsification",
-      titleHref: "./paper_assets/Efficient_DLLM_NeurIPS2026.pdf",
+      titleHref: "https://zaiquanyang.github.io/paper_assets/Efficient_DLLM_NeurIPS2026.pdf",
       authors: "Z Yang et al.",
       venue: "arXiv 2026",
       venueBold: true,
