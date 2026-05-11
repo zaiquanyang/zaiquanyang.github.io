@@ -344,7 +344,7 @@ h2 {
 
 .pub-title {
   margin: 0;
-  font-size: 1rem;
+  font-size: calc(1rem + 3px);
   font-weight: 600;
 }
 
@@ -360,7 +360,7 @@ h2 {
 .pub-meta {
   margin: 0.2rem 0 0;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: calc(0.9rem + 3px);
 }
 
 .pub-links {
