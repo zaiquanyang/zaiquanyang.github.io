@@ -201,7 +201,6 @@ function fillBasicProfile() {
   document.getElementById("heroName").textContent = profile.name;
   document.getElementById("heroAffiliation").textContent = profile.affiliation;
   document.getElementById("heroSummary").textContent = profile.summary;
-  document.getElementById("heroAvatar").src = profile.avatar;
   document.getElementById("aboutText").innerHTML = profile.about;
   document.getElementById("footerName").textContent = profile.name;
   document.getElementById("footerYear").textContent = new Date().getFullYear();
