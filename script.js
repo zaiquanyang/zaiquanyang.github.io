@@ -1,6 +1,6 @@
 const profile = {
   name: "Zaiquan Yang",
-  affiliation: "Department of Computer Science and Engineering, City University of Hong Kong",
+  affiliation: "Department of Computer Science and Engineering,<br>City University of Hong Kong",
   avatar:
     "./assets/personal_v1.jpg",
   wechatQr: "./assets/微信图片_20260511202308_98_10.jpg",
@@ -197,7 +197,7 @@ const services = [
 function fillBasicProfile() {
   document.title = `${profile.name} | Academic Homepage`;
   document.getElementById("heroName").textContent = profile.name;
-  document.getElementById("heroAffiliation").textContent = profile.affiliation;
+  document.getElementById("heroAffiliation").innerHTML = profile.affiliation;
   document.getElementById("aboutText").innerHTML = profile.about;
   document.getElementById("footerName").textContent = profile.name;
   document.getElementById("footerYear").textContent = new Date().getFullYear();
