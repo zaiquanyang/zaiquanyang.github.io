@@ -250,6 +250,30 @@ function renderList(containerId, items) {
   });
 }
 
+function formatNewsText(text) {
+  const withVenue = text.match(/^(\d{4}:\s*)(.+?)(\s*\([^)]*\)\.?$)/);
+  if (withVenue) {
+    return `${withVenue[1]}<strong>${withVenue[2]}</strong>${withVenue[3]}`;
+  }
+
+  const publishedPattern = text.match(/^(\d{4}:\s*)(.+?)(\spublished in.*$)/i);
+  if (publishedPattern) {
+    return `${publishedPattern[1]}<strong>${publishedPattern[2]}</strong>${publishedPattern[3]}`;
+  }
+
+  return text;
+}
+
+function renderNews(containerId, items) {
+  const el = document.getElementById(containerId);
+  el.innerHTML = "";
+  items.forEach((text) => {
+    const li = document.createElement("li");
+    li.innerHTML = formatNewsText(text);
+    el.appendChild(li);
+  });
+}
+
 function renderTags() {
   const el = document.getElementById("researchTags");
   el.innerHTML = "";
@@ -400,7 +424,7 @@ function init() {
   renderLinks("heroLinks", profile.heroLinks);
   renderQuickInfo();
   renderTags();
-  renderList("newsList", news);
+  renderNews("newsList", news);
   renderList("internshipList", internship);
   renderList("servicesList", services);
   initPublicationTabs();
