@@ -262,6 +262,11 @@ h2 {
   padding-left: 0.2rem;
 }
 
+.timeline .news-title {
+  font-weight: 700;
+  color: #111111;
+}
+
 .pub-head {
   display: flex;
   justify-content: space-between;

@@ -253,12 +253,12 @@ function renderList(containerId, items) {
 function formatNewsText(text) {
   const withVenue = text.match(/^(\d{4}:\s*)(.+?)(\s*\([^)]*\)\.?$)/);
   if (withVenue) {
-    return `${withVenue[1]}<strong>${withVenue[2]}</strong>${withVenue[3]}`;
+    return `${withVenue[1]}<span class="news-title">${withVenue[2]}</span>${withVenue[3]}`;
   }
 
   const publishedPattern = text.match(/^(\d{4}:\s*)(.+?)(\spublished in.*$)/i);
   if (publishedPattern) {
-    return `${publishedPattern[1]}<strong>${publishedPattern[2]}</strong>${publishedPattern[3]}`;
+    return `${publishedPattern[1]}<span class="news-title">${publishedPattern[2]}</span>${publishedPattern[3]}`;
   }
 
   return text;
