@@ -246,6 +246,16 @@ function renderList(containerId, items) {
   });
 }
 
+function renderServices(containerId, items) {
+  const el = document.getElementById(containerId);
+  el.innerHTML = "";
+  items.forEach((text) => {
+    const li = document.createElement("li");
+    li.innerHTML = text.replace(/\\n|\n/g, "<br>");
+    el.appendChild(li);
+  });
+}
+
 function formatNewsText(text) {
   const withVenue = text.match(/^(\d{4}:\s*)(.+?)(\s*\([^)]*\)\.?$)/);
   if (withVenue) {
@@ -422,7 +432,7 @@ function init() {
   renderTags();
   renderNews("newsList", news);
   renderList("internshipList", internship);
-  renderList("servicesList", services);
+  renderServices("servicesList", services);
   initPublicationTabs();
   initRevealAnimation();
 }
