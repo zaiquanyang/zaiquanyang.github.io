@@ -190,6 +190,13 @@ const internship = [
   "Noah/HuaWei, Research Intern, 2025-06~2025-10.",
 ];
 
+const learningSites = [
+  {
+    label: "Read Paper",
+    href: "https://zaiquanyang.github.io/Read_Paper/index.html"
+  }
+];
+
 const services = [
   "Invited Reviewer for:\nConferences: ICML2025, ICML2026, NeurIPS2024, NeurIPS2025, NeurIPS2026, ICLR2025, ICLR2026"
 ];
@@ -242,6 +249,21 @@ function renderList(containerId, items) {
   items.forEach((text) => {
     const li = document.createElement("li");
     li.textContent = text;
+    el.appendChild(li);
+  });
+}
+
+function renderLinkList(containerId, items) {
+  const el = document.getElementById(containerId);
+  el.innerHTML = "";
+  items.forEach((item) => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = item.href;
+    a.textContent = item.label;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    li.appendChild(a);
     el.appendChild(li);
   });
 }
@@ -432,6 +454,7 @@ function init() {
   renderTags();
   renderNews("newsList", news);
   renderList("internshipList", internship);
+  renderLinkList("learningSitesList", learningSites);
   renderServices("servicesList", services);
   initPublicationTabs();
   initRevealAnimation();

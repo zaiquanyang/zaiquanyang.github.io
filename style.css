@@ -411,6 +411,18 @@ h2 {
   gap: 0.35rem;
 }
 
+#learningSitesList a {
+  color: #38bdf8;
+  text-decoration: none;
+  border-bottom: 1px solid #7dd3fc;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+#learningSitesList a:hover {
+  color: #0284c7;
+  border-color: #0284c7;
+}
+
 #servicesList li {
   white-space: pre-line;
 }
