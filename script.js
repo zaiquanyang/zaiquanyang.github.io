@@ -62,6 +62,7 @@ const profile = {
 };
 
 const news = [
+    "2026: Towards Unbiased On-Policy Distillation for Block Diffusion Language Models (Un-OPD, arXiv 2026).",
     "2026: Visual Enhanced Depth Scaling for Multimodal Latent Reasoning (NeurIPS 2026).",
     "2026: Beyond the Canvas: Efficient dLLMs via Self-Guided CoT Compression and Suffix Sparsification (arXiv 2026).",
     "2025: Unleashing the Potential of Multimodal LLMs for Zero-Shot Spatio-Temporal Video Grounding (NeurIPS 2025).",
@@ -71,6 +72,31 @@ const news = [
 
 const publications = {
   first_author: [
+    {
+      title: "Towards Unbiased On-Policy Distillation for Block Diffusion Language Models",
+      titleHref: "./paper_assets/Un_OPD.pdf",
+      authors: "Zaiquan Yang et al.",
+      venue: "arXiv 2026",
+      thumbnail: "./paper_assets/Un_OPD.png",
+      thumbnailFit: "contain",
+      keywords: ["Un-OPD", "Block Diffusion Language Models", "On-Policy Distillation"],
+      links: []
+    },
+    {
+      title: "Visual Enhanced Depth Scaling for Multimodal Latent Reasoning",
+      titleHref: "https://arxiv.org/pdf/2604.10500",
+      authors: "Y Han, Y Wang, Z Yang, Z Qu, L Pan, X Chu",
+      venue: "NeurIPS 2026",
+      thumbnail: "./paper_assets/neurIPS2026.png",
+      thumbnailFit: "contain",
+      keywords: ["Multimodal Reasoning", "Latent Reasoning"],
+      links: [
+        {
+          label: "Scholar",
+          href: "https://scholar.google.com/scholar_lookup?arxiv_id=2604.10500"
+        }
+      ]
+    },
     {
       title: "Beyond the Canvas: Efficient dLLMs via Self-Guided CoT Compression and Suffix Sparsification",
       titleHref: "https://zaiquanyang.github.io/paper_assets/Efficient_DLLM_NeurIPS2026.pdf",
@@ -113,21 +139,6 @@ const publications = {
           href: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YX1YzlkAAAAJ&citation_for_view=YX1YzlkAAAAJ:eQOLeE2rZwMC"
         }
       ]
-    },
-    {
-      title: "Visual Enhanced Depth Scaling for Multimodal Latent Reasoning",
-      titleHref: "https://arxiv.org/pdf/2604.10500",
-      authors: "Y Han, Y Wang, Z Yang, Z Qu, L Pan, X Chu",
-      venue: "NeurIPS 2026",
-      thumbnail: "./paper_assets/neurIPS2026.png",
-      thumbnailFit: "contain",
-      keywords: ["Multimodal Reasoning", "Latent Reasoning"],
-      links: [
-        {
-          label: "Scholar",
-          href: "https://scholar.google.com/scholar_lookup?arxiv_id=2604.10500"
-        }
-      ]
     }
   ],
   corresponding: [
@@ -159,19 +170,6 @@ const publications = {
       ]
     },
     {
-      title: "Semantic-aligned reinforced attention model for zero-shot learning",
-      titleHref: "https://www.sciencedirect.com/science/article/abs/pii/S0262885622002153",
-      authors: "Z Yang, Y Zhang, Y Du, C Tong",
-      venue: "IVC2022",
-      keywords: ["Zero-shot Learning", "Attention"],
-      links: [
-        {
-          label: "Scholar",
-          href: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YX1YzlkAAAAJ&citation_for_view=YX1YzlkAAAAJ:Se3iqnhoufwC"
-        }
-      ]
-    },
-    {
       title: "Cross-domain semantic decoupling for weakly-supervised semantic segmentation",
       titleHref: "https://papers.bmvc2023.org/0351.pdf",
       authors: "Y Zaiquan, KE Zhanghan, WH Rynson",
@@ -181,6 +179,19 @@ const publications = {
         {
           label: "Scholar",
           href: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YX1YzlkAAAAJ&citation_for_view=YX1YzlkAAAAJ:LkGwnXOMwfcC"
+        }
+      ]
+    },
+    {
+      title: "Semantic-aligned reinforced attention model for zero-shot learning",
+      titleHref: "https://www.sciencedirect.com/science/article/abs/pii/S0262885622002153",
+      authors: "Z Yang, Y Zhang, Y Du, C Tong",
+      venue: "IVC2022",
+      keywords: ["Zero-shot Learning", "Attention"],
+      links: [
+        {
+          label: "Scholar",
+          href: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YX1YzlkAAAAJ&citation_for_view=YX1YzlkAAAAJ:Se3iqnhoufwC"
         }
       ]
     }
