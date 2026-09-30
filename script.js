@@ -147,7 +147,6 @@ const publications = {
       titleHref: "https://arxiv.org/pdf/2509.15178",
       authors: "Z Yang, Y Liu, W Xu, C Huang, L Zhou, C Tong",
       venue: "IJCAI 2023",
-      thumbnail: "./paper_assets/LPL.png",
       keywords: ["Zero-shot Learning", "Prototype Learning"],
       links: [
         {
