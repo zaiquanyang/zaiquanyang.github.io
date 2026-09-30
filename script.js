@@ -77,9 +77,9 @@ const publications = {
       titleHref: "./paper_assets/Un_OPD.pdf",
       authors: "Zaiquan Yang et al.",
       venue: "arXiv 2026",
-      thumbnail: "./paper_assets/Un_OPD.png?v=20260930-2",
+      thumbnail: "./paper_assets/Un_OPD_training_curves.png",
       thumbnailFit: "contain",
-      keywords: ["Un-OPD", "Block Diffusion Language Models", "On-Policy Distillation"],
+      keywords: [],
       links: []
     },
     {
