@@ -62,7 +62,7 @@ const profile = {
 };
 
 const news = [
-    "2026: Visual Enhanced Depth Scaling for Multimodal Latent Reasoning (arXiv 2026).",
+    "2026: Visual Enhanced Depth Scaling for Multimodal Latent Reasoning (NeurIPS 2026).",
     "2026: Beyond the Canvas: Efficient dLLMs via Self-Guided CoT Compression and Suffix Sparsification (arXiv 2026).",
     "2025: Unleashing the Potential of Multimodal LLMs for Zero-Shot Spatio-Temporal Video Grounding (NeurIPS 2025).",
     "2024: Boosting weakly supervised referring image segmentation via progressive comprehension (NeurIPS 2024).",
@@ -115,6 +115,21 @@ const publications = {
       ]
     },
     {
+      title: "Visual Enhanced Depth Scaling for Multimodal Latent Reasoning",
+      titleHref: "https://arxiv.org/pdf/2604.10500",
+      authors: "Y Han, Y Wang, Z Yang, Z Qu, L Pan, X Chu",
+      venue: "NeurIPS 2026",
+      keywords: ["Multimodal Reasoning", "Latent Reasoning"],
+      links: [
+        {
+          label: "Scholar",
+          href: "https://scholar.google.com/scholar_lookup?arxiv_id=2604.10500"
+        }
+      ]
+    }
+  ],
+  corresponding: [
+    {
       title: "Learning prototype via placeholder for zero-shot recognition",
       titleHref: "https://arxiv.org/pdf/2509.15178",
       authors: "Z Yang, Y Liu, W Xu, C Huang, L Zhou, C Tong",
@@ -125,21 +140,6 @@ const publications = {
         {
           label: "Scholar",
           href: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=YX1YzlkAAAAJ&citation_for_view=YX1YzlkAAAAJ:W7OEmFMy1HYC"
-        }
-      ]
-    }
-  ],
-  corresponding: [
-    {
-      title: "Visual Enhanced Depth Scaling for Multimodal Latent Reasoning",
-      titleHref: "https://arxiv.org/pdf/2604.10500",
-      authors: "Y Han, Y Wang, Z Yang, Z Qu, L Pan, X Chu",
-      venue: "arXiv 2026",
-      keywords: ["Multimodal Reasoning", "Latent Reasoning"],
-      links: [
-        {
-          label: "Scholar",
-          href: "https://scholar.google.com/scholar_lookup?arxiv_id=2604.10500"
         }
       ]
     },
