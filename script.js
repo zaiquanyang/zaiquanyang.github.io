@@ -119,6 +119,8 @@ const publications = {
       titleHref: "https://arxiv.org/pdf/2604.10500",
       authors: "Y Han, Y Wang, Z Yang, Z Qu, L Pan, X Chu",
       venue: "NeurIPS 2026",
+      thumbnail: "./paper_assets/neurIPS2026.png",
+      thumbnailFit: "contain",
       keywords: ["Multimodal Reasoning", "Latent Reasoning"],
       links: [
         {
@@ -349,6 +351,7 @@ function createPublicationCard(paper) {
     const img = document.createElement("img");
     img.className = "pub-thumb";
     img.src = paper.thumbnail;
+    if (paper.thumbnailFit) img.style.objectFit = paper.thumbnailFit;
     img.alt = `${paper.title} thumbnail`;
     img.loading = "lazy";
     card.appendChild(img);
