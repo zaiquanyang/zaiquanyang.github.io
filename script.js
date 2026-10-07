@@ -74,7 +74,7 @@ const publications = {
   first_author: [
     {
       title: "Towards Unbiased On-Policy Distillation for Block Diffusion Language Models",
-      titleHref: "./paper_assets/Un_OPD.pdf",
+      titleHref: "https://arxiv.org/pdf/2610.05373",
       authors: "Zaiquan Yang et al.",
       venue: "arXiv 2026",
       thumbnail: "./paper_assets/Un_OPD_training_curves.png",
