@@ -302,7 +302,7 @@ h2 {
 .pub-grid {
   margin-top: 0.75rem;
   display: grid;
-  gap: 0.55rem;
+  gap: 1.15rem;
 }
 
 .pub-subsection + .pub-subsection {
@@ -319,20 +319,18 @@ h2 {
 
 .pub-subgrid {
   display: grid;
-  gap: 0.55rem;
+  gap: 1.15rem;
 }
 
 .pub-card {
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 0.8rem 0.9rem;
-  background: #fff;
+  padding: 0;
+  background: transparent;
 }
 
 .pub-card.with-thumb {
   display: grid;
-  grid-template-columns: 168px 1fr;
-  gap: 0.9rem;
+  grid-template-columns: 220px 1fr;
+  gap: 1.25rem;
   align-items: start;
 }
 
@@ -341,7 +339,8 @@ h2 {
   aspect-ratio: 16 / 10;
   object-fit: cover;
   border: 1px solid var(--line);
-  border-radius: 3px;
+  border-radius: 6px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
   display: block;
 }
 
@@ -351,8 +350,9 @@ h2 {
 
 .pub-title {
   margin: 0;
-  font-size: calc(1rem + 3px);
-  font-weight: 600;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  font-weight: 700;
 }
 
 .pub-title-link {
@@ -365,26 +365,25 @@ h2 {
 }
 
 .pub-meta {
-  margin: 0.2rem 0 0;
+  margin: 0.28rem 0 0;
   color: var(--muted);
-  font-size: calc(0.9rem + 3px);
+  font-size: 1rem;
 }
 
 .pub-links {
-  margin-top: 0.35rem;
+  margin-top: 0.7rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.65rem;
 }
 
 .pub-links a {
   text-decoration: none;
-  font-size: 0.87rem;
-  padding: 0;
-  border-radius: 0;
-  border: 0;
-  border-bottom: 1px solid #cdcdcd;
-  color: #2c2c2c;
+  font-size: 1rem;
+  padding: 0.35rem 1rem;
+  border-radius: 3px;
+  border: 1px solid #1f2937;
+  color: #111827;
   background: transparent;
 }
 

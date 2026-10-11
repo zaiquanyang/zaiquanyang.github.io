@@ -398,6 +398,22 @@ function createPublicationCard(paper) {
   const links = document.createElement("div");
   links.className = "pub-links";
 
+  if (paper.titleHref) {
+    const bib = document.createElement("a");
+    bib.href = paper.bibHref || paper.titleHref;
+    bib.textContent = "BIB";
+    bib.target = "_blank";
+    bib.rel = "noopener noreferrer";
+    links.appendChild(bib);
+
+    const pdf = document.createElement("a");
+    pdf.href = paper.pdfHref || paper.titleHref;
+    pdf.textContent = "PDF";
+    pdf.target = "_blank";
+    pdf.rel = "noopener noreferrer";
+    links.appendChild(pdf);
+  }
+
   (paper.keywords || []).forEach((keyword) => {
     const tag = document.createElement("span");
     tag.className = "pub-keyword";
