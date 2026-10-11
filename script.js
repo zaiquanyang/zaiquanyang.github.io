@@ -75,6 +75,7 @@ const publications = {
     {
       title: "Towards Unbiased On-Policy Distillation for Block Diffusion Language Models",
       titleHref: "https://arxiv.org/pdf/2610.05373",
+      bibHref: "https://arxiv.org/bibtex/2610.05373",
       authors: "Zaiquan Yang et al.",
       venue: "arXiv 2026",
       thumbnail: "./paper_assets/Un_OPD_training_curves.png",
@@ -85,6 +86,7 @@ const publications = {
     {
       title: "Visual Enhanced Depth Scaling for Multimodal Latent Reasoning",
       titleHref: "https://arxiv.org/pdf/2604.10500",
+      bibHref: "https://arxiv.org/bibtex/2604.10500",
       authors: "Y Han, Y Wang, Z Yang, Z Qu, L Pan, X Chu",
       venue: "NeurIPS 2026",
       thumbnail: "./paper_assets/neurIPS2026.png",
@@ -100,6 +102,7 @@ const publications = {
     {
       title: "Beyond the Canvas: Efficient dLLMs via Self-Guided CoT Compression and Suffix Sparsification",
       titleHref: "https://arxiv.org/pdf/2610.05373",
+      bibHref: "https://arxiv.org/bibtex/2610.05373",
       authors: "Z Yang et al.",
       venue: "arXiv 2026",
       venueBold: true,
@@ -115,6 +118,7 @@ const publications = {
     {
       title: "Unleashing the Potential of Multimodal LLMs for Zero-Shot Spatio-Temporal Video Grounding",
       titleHref: "https://arxiv.org/pdf/2509.15178",
+      bibHref: "https://arxiv.org/bibtex/2509.15178",
       authors: "Z Yang, Y Liu, G Hancke, RWH Lau",
       venue: "NeurIPS 2025",
       thumbnail: "./paper_assets/video_grounding.png",
@@ -129,6 +133,7 @@ const publications = {
     {
       title: "Boosting weakly supervised referring image segmentation via progressive comprehension",
       titleHref: "https://arxiv.org/pdf/2207.14581",
+      bibHref: "https://arxiv.org/bibtex/2207.14581",
       authors: "Z Yang, Y Liu, J Lin, G Hancke, R Lau",
       venue: "NeurIPS 2024",
       thumbnail: "./paper_assets/img_ref_seg.png",
@@ -145,6 +150,7 @@ const publications = {
     {
       title: "Learning prototype via placeholder for zero-shot recognition",
       titleHref: "https://arxiv.org/pdf/2509.15178",
+      bibHref: "https://arxiv.org/bibtex/2509.15178",
       authors: "Z Yang, Y Liu, W Xu, C Huang, L Zhou, C Tong",
       venue: "IJCAI 2023",
       keywords: ["Zero-shot Learning", "Prototype Learning"],
@@ -158,6 +164,7 @@ const publications = {
     {
       title: "ProtoCLIP: Prototypical contrastive language image pretraining",
       titleHref: "https://arxiv.org/abs/2206.10996",
+      bibHref: "https://arxiv.org/bibtex/2206.10996",
       authors: "D Chen, Z Wu, F Liu, Z Yang, S Zheng, Y Tan, E Zhou",
       venue: "TNNLS2023",
       keywords: ["Vision-Language Pretraining", "Contrastive Learning"],
