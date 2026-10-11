@@ -48,7 +48,8 @@ body {
 }
 
 .page-sheet {
-  width: min(290mm, calc(100% - 1.6rem));
+  /* Keep the reading column compact on wide screens while preserving fluid margins. */
+  width: min(700px, calc(100% - 1.6rem));
   margin: 2rem auto;
   background: #ffffff;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
